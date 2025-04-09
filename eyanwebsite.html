@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Videographer & Photographer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="pics/ejlogo.png" alt="Logo" />
+    </div>
+    <nav>
+      <div class="hamburger-menu">☰</div>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#socials">Socials</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+
+  <main>
+    <section class="slideshow-container">
+      <div class="slideshow">
+        <div class="slide"><img src="pics/baseball1.jpg" alt="Portfolio Image"></div>
+        <div class="slide"><img src="pics/bball1.jpg" alt="Portfolio Image"></div>
+        <div class="slide"><img src="pics/baseball2.jpg" alt="Portfolio Image"></div>
+        <div class="slide"><img src="pics/bball2.jpg" alt="Portfolio Image"></div>
+        <div class="slide"><img src="pics/impala1.jpg" alt="Portfolio Image"></div>
+        <div class="slide"><img src="pics/bball3.jpg" alt="Portfolio Image"></div>
+        <div class="slide"><img src="pics/baseball3.jpg" alt="Portfolio Image"></div>
+        <div class="slide"><img src="pics/bball4.jpg" alt="Portfolio Image"></div>
+        <div class="slide"><img src="pics/baseball4.jpg" alt="Portfolio Image"></div>
+        <div class="slide"><img src="pics/bball5.jpg" alt="Portfolio Image"></div>
+        <div class="slide"><img src="pics/baseball5.jpg" alt="Portfolio Image"></div>
+        <div class="slide"><img src="pics/bball6.jpg" alt="Portfolio Image"></div>
+        <div class="slide"><img src="pics/baseball6.jpg" alt="Portfolio Image"></div>
+      </div>
+      
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+      <div class="dots-container"></div>
+    </section>
+
+    <section id="about">
+      <div class="content">
+        <h2>About Me</h2>
+        <p>Hi, I’m Eyan Morgan, a dedicated sports videographer and photographer with a passion for capturing the energy, skill, and emotion of the game. I know how much every moment on the court or field matters, and my goal is to bring those moments to life through high-quality visuals that showcase athletes at their best.
+
+          I strive to create dynamic content that not only tells a story but also helps players, teams, and brands stand out. With an eye for detail and a commitment to excellence, I’m here to make sure your highlights look as powerful as the game itself.
+          
+          Let’s work together to capture your best moments—one frame at a time</p>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="content">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+          <img src="pics/impala1.jpg" alt="">
+          <img src="pics/bball1.jpg" alt="">
+          <img src="pics/baseball4.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="content">
+        <h2>Pricing</h2>
+        <div class="pricing-category">
+          <h3>📸 Photography Services</h3>
+    
+          <div class="pricing-box">
+            <h4>Game Day Action Shots</h4>
+            <ul>
+              <li><strong>Basic – $30</strong>: 20+ high-quality action photos, edited & delivered digitally in 2-3 days</li>
+              <li><strong>Standard – $60</strong>: 40+ photos, faster delivery (24-48 hours)</li>
+              <li><strong>Premium – $100</strong>: 60+ photos, 24-hour delivery, includes social media-ready edits</li>
+            </ul>
+          </div>
+    
+          <div class="pricing-box">
+            <h4>Team & Player Photos</h4>
+            <ul>
+              <li><strong>Individual Athlete Photoshoot – $50</strong>: 5-10 edited portraits, multiple poses & backgrounds</li>
+              <li><strong>Team Photo Package – $100</strong>: Group + individual shots, professionally edited</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="pricing-category">
+          <h3>🎥 Videography Services</h3>
+    
+          <div class="pricing-box">
+            <h4>Game Highlight Videos</h4>
+            <ul>
+              <li><strong>Basic – $75</strong>: 1-2 minute cinematic video, delivered in 3-4 days</li>
+              <li><strong>Standard – $120</strong>: 3-5 minutes, multi-angle, transitions & music</li>
+            </ul>
+          </div>
+    
+          <div class="pricing-box">
+            <h4>Athlete Highlight Reels</h4>
+            <ul>
+              <li><strong>Basic – $60</strong>: 1-2 minute reel from multiple games, transitions & effects</li>
+              <li><strong>Pro-Level – $120</strong>: 3-5 minute reel, includes name, stats, slow-motion</li>
+            </ul>
+          </div>
+    
+          <div class="pricing-box">
+            <h4>Full Game Film</h4>
+            <ul>
+              <li><strong>Single Game – $100</strong>: Full footage, multiple angles, includes replays/highlights</li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="pricing-category">
+          <h3>💼 Extras & Add-Ons</h3>
+          <ul>
+            <li><strong>Extra Edits/Revisions – $15</strong> per revision</li>
+            <li><strong>Rush Delivery – $30</strong> (Under 24 Hours)</li>
+            <li><strong>Raw Footage – $30</strong></li>
+            <li><strong>Travel Fee – $15+</strong> (Outside 30 miles)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+        
+
+    <section id="contact">
+      <div class="content">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/myzebydd" method="POST">
+            <input type="text" name="first-name" placeholder="First Name" required>
+            <input type="text" name="last-name" placeholder="Last Name" required>
+            <input type="sport"name="sport" placeholder="Sport" required>            
+          <select id="service">
+            <option value="">Select a Service</option>
+            <option value="videography">Videography</option>
+            <option value="photography">Photography</option>
+            <option value="both">Both</option>
+          </select>
+          <input type="text" name="package" placeholder="Enter specific package from above:" required>
+          <textarea name="message" rows="4" placeholder="Enter message of any other inquires or questions"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <p><i>Once submitted, you will recieve a follow up email as soon as possible with further details.</i></p>
+      </div>
+    </section>
+
+    <section id="socials">
+      <div class="content">
+        <h2>Socials and Contact Info</h2>
+        <p>Email: <i>shotssbyej@gmail.com</i></p>
+        <p>Phone Number:<i> (469) 704-2294</i></p>
+        <p><b>Follow my socials:</b></p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/shotssbyej" target="_blank">
+            <img src="pics/iglogo.png" alt="Instagram" class="social-icon"/>
+          </a>
+          <a href="https://www.tiktok.com/@shotssbyejay_" target="_blank">
+            <img src="pics/ttlogo.webp" alt="TikTok" class="social-icon"/>
+          </a>
+          <a href="https://www.youtube.com/@SHOTSSBYEJAY" target="_blank">
+            <img src="pics/ytlogo.png" alt="YouTube" class="social-icon"/>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
