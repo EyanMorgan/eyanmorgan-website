@@ -62,17 +62,3 @@ const navLinks = document.querySelector('.nav-links');
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
-
-// === Lightbox Viewer ===
-const galleryImages = document.querySelectorAll('.portfolio-gallery img');
-galleryImages.forEach(img => {
-  img.addEventListener('click', () => {
-    const lightbox = document.createElement('div');
-    lightbox.classList.add('lightbox');
-    lightbox.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
-    document.body.appendChild(lightbox);
-    lightbox.addEventListener('click', () => lightbox.remove());
-  });
-});
-
-
