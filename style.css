@@ -121,23 +121,32 @@ section p {
   font-size: 1.1rem;
 }
 
+.slideshow-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+}
+
 .slideshow-container {
   position: relative;
   width: 90%;
   max-width: 500px;
-  aspect-ratio: 4 / 3;
+  height: auto;
   overflow: hidden;
-  margin: 2rem auto;
+  margin: 2rem auto 1rem auto;
   background-color: var(--bg-light);
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  aspect-ratio: 4 / 3;
 }
 
 .slideshow {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .slide {
@@ -153,16 +162,20 @@ section p {
   display: block;
 }
 
-
+/* Dots container below slideshow */
 .dots-container {
+  width: 100%;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .dot {
-  height: 14px;
-  width: 14px;
-  margin: 0 5px;
+  height: 12px;
+  width: 12px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -174,7 +187,9 @@ section p {
   background-color: var(--primary-color);
 }
 
-.prev, .next {
+/* Navigation buttons */
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -185,10 +200,11 @@ section p {
   cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 50%;
+  z-index: 10;
 }
 
-.prev { left: 15px; }
-.next { right: 15px; }
+.prev { left: 10px; }
+.next { right: 10px; }
 
 form {
   display: flex;
@@ -337,25 +353,26 @@ footer {
     align-items: flex-start;
   }
 
-  .slideshow-container {
-    width: 95%;
-    aspect-ratio: 4 / 3;
-    margin: 1.5ren auto;
-  }
-
+  
   section h2 {
     font-size: 2rem;
   }
 
-  .slide img {
-    width: 100%;
+  .slideshow-container {
+    width: 95%;
+    aspect-ratio: auto;
     height: auto;
-    object-fit: contain;
   }
 
-  .prev, .next {
+  .slide img {
+    object-fit: contain;
+    max-height: 70vh; /* ensures full image visible, fits screen */
+  }
+
+  .prev,
+  .next {
     font-size: 1.5rem;
-    padding: 0.3rem 0.6rem;
+    padding: 0.4rem 0.6rem;
   }
 
   .dot {
